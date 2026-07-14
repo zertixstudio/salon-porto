@@ -21,8 +21,12 @@ export default function Gallery() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-      gsap.utils.toArray<HTMLElement>(".gallery-item").forEach((item) => {
+      gsap.utils.toArray<HTMLElement>(".gallery-item").forEach((item, index) => {
         const speed = parseFloat(item.dataset.speed || "0.2");
+        const isMobile = window.innerWidth < 768;
+        const offsetX = isMobile ? (index % 2 === 0 ? -30 : 30) : index % 2 === 0 ? -40 : 40;
+        const offsetY = isMobile ? 30 : 20;
+
         gsap.fromTo(
           item.querySelector("img"),
           { yPercent: -speed * 60 },
@@ -39,10 +43,12 @@ export default function Gallery() {
         );
         gsap.fromTo(
           item,
-          { opacity: 0, y: 40 },
+          { opacity: 0, x: offsetX, y: offsetY, scale: 0.98 },
           {
             opacity: 1,
+            x: 0,
             y: 0,
+            scale: 1,
             duration: 0.9,
             ease: "power3.out",
             scrollTrigger: { trigger: item, start: "top 88%" },

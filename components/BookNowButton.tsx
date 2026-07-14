@@ -17,7 +17,7 @@ export default function BookNowButton({
   const solid =
     "bg-gold text-charcoal hover:bg-gold-bright hover:scale-[1.03] active:scale-[0.98]";
   const outline =
-    "border border-gold/70 text-gold hover:bg-gold hover:text-charcoal hover:scale-[1.03] active:scale-[0.98]";
+    "border border-gold text-gold bg-transparent hover:bg-gold/15 hover:text-cream active:bg-gold/25 active:text-cream hover:scale-[1.02] active:scale-[0.98]";
 
   return (
     <a

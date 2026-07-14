@@ -4,6 +4,7 @@ import StackPanel from "@/components/StackPanel";
 import { ChapterOne, ChapterTwo } from "@/components/Chapters";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
+import Reviews from "@/components/Reviews";
 import Booking from "@/components/Booking";
 import Footer from "@/components/Footer";
 
@@ -31,6 +32,7 @@ export default function Home() {
       <div className="relative z-40 bg-cream">
         <Services />
         <Gallery />
+        <Reviews />
         <Booking />
         <Footer />
       </div>

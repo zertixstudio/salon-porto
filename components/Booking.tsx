@@ -39,7 +39,7 @@ export default function Booking() {
         {t.booking.body}
       </p>
       <div className="booking-reveal mt-10">
-        <BookNowButton />
+        <BookNowButton variant="outline" />
       </div>
     </section>
   );

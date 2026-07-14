@@ -14,20 +14,26 @@ export default function Services() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
+      const isDesktop = window.matchMedia("(min-width: 768px)").matches;
       const rows = gsap.utils.toArray<HTMLElement>(".service-row");
       rows.forEach((row, i) => {
         const fromLeft = i % 2 === 0;
+        const initial = isDesktop
+          ? { x: fromLeft ? -70 : 70, y: 20, opacity: 0 }
+          : { x: 0, y: 30, opacity: 0 };
+
         gsap.fromTo(
           row,
-          { x: fromLeft ? -70 : 70, opacity: 0 },
+          initial,
           {
             x: 0,
+            y: 0,
             opacity: 1,
-            duration: 0.9,
+            duration: isDesktop ? 0.9 : 0.7,
             ease: "power3.out",
             scrollTrigger: {
               trigger: row,
-              start: "top 85%",
+              start: "top 88%",
             },
           }
         );

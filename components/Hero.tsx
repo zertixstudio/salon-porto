@@ -83,7 +83,7 @@ export default function Hero() {
               {t.hero.sub}
             </p>
             <div className="hero-cta mt-8">
-              <BookNowButton />
+              <BookNowButton variant="outline" />
             </div>
           </div>
 
