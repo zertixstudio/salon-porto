@@ -42,7 +42,7 @@ export default function Nav() {
           {SITE.name}
         </button>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 lg:flex">
           <button onClick={() => scrollTo("philosophy")} className="eyebrow text-ink/70 hover:text-ink transition-colors">
             {t.nav.philosophy}
           </button>
@@ -59,10 +59,10 @@ export default function Nav() {
 
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
-          <BookNowButton className="hidden sm:inline-flex" />
+          <BookNowButton className="hidden lg:inline-flex" />
           <button
             onClick={() => setMenuOpen((value) => !value)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink lg:hidden"
             aria-label="Toggle mobile menu"
           >
             <span className="text-2xl">{menuOpen ? "×" : "☰"}</span>

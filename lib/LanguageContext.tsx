@@ -3,10 +3,12 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { Locale, translations } from "./translations";
 
+type Translation = typeof translations[Locale];
+
 type Ctx = {
   locale: Locale;
   setLocale: (l: Locale) => void;
-  t: typeof translations["en"];
+  t: Translation;
 };
 
 const LanguageContext = createContext<Ctx | null>(null);

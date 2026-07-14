@@ -68,9 +68,6 @@ export default function Hero() {
       <div className="hero-reveal relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-24 md:justify-center md:px-10 md:pb-0">
         <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-12">
           <div className="md:col-span-7 lg:col-span-6">
-            <p className="hero-line overflow-hidden">
-              <span className="eyebrow block text-gold">{t.hero.eyebrow}</span>
-            </p>
             <h1 className="mt-4 font-display text-[13vw] font-800 leading-[0.95] text-cream md:text-[6.2vw]">
               <span className="block overflow-hidden">
                 <span className="hero-line block">{t.hero.title1}</span>
