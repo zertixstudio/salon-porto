@@ -1,6 +1,6 @@
-# G Beauty Concept — Website
+# Glamour Haven Website
 
-Premium nail & beauty atelier site for **G Beauty Concept** (Porto, Portugal), built with:
+Premium nail & beauty atelier site for Glamour Haven in Vale de Cambra, Portugal, built with:
 
 - **Next.js 14** (App Router) + **React 18** + **TypeScript**
 - **Tailwind CSS** — custom cream / charcoal / muted-gold palette
@@ -31,7 +31,7 @@ The layout expects these files (placeholders folders are already created):
 
 Use real, high-resolution photos/video of the salon and treatments — this is what will make the site feel human rather than generic. Keep the hero video under ~15MB and compressed (H.264 mp4) for fast loading.
 
-## 3. Set your real Fresha link
+## 3. Set your real booking link
 
 Open `lib/translations.ts` and update:
 

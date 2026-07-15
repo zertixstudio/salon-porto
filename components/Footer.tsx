@@ -44,7 +44,7 @@ export default function Footer() {
 
         <div className="h-64 w-full overflow-hidden rounded-sm border border-cream/10 md:h-full">
           <iframe
-            title="G Beauty Concept location"
+            title="Glamour Haven location"
             src={`https://www.google.com/maps?q=${encodeURIComponent(
               SITE.address
             )}&output=embed`}

@@ -19,9 +19,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tânia Pinho - Instituto de Beleza — Vale de Cambra",
+  title: "Glamour Haven",
   description:
-    "Instituto de beleza em Vale de Cambra, Portugal. Nail design, cabeleireiro, maquilhagem, pestanas, limpeza de pele, tratamentos de corpo, pedicure spa, tatuagens e piercings.",
+    "Glamour Haven offering nail design, hair styling, makeup, lashes, skin care, body treatments, spa pedicure, tattoos and piercings.",
 };
 
 export default function RootLayout({

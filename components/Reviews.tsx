@@ -6,21 +6,21 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const REVIEWS = [
   {
-    name: "Beatriz Silva",
+    name: "Victoria",
     url: "https://www.google.com/maps/contrib/106413832729658479201/reviews?hl=en-GB",
     date: "2 years ago",
-    text: "É sempre uma alegria. A Tânia mais que uma fada das unhas também é uma amiga. Três anos com ela e todas as vezes saiu de lá feliz, com a minha autoestima no auge porque ela tratou de o fazer de uma melhor forma. Ela supera quaisquer expectativas que eu tenha criadas quando chego ao instituto. Amo!",
+    text: "É sempre uma alegria. Mais do que uma profissional, também é uma amiga. Três anos com ela e todas as vezes saiu de lá feliz, com a minha autoestima no auge porque ela tratou de o fazer de uma melhor forma. Ela supera quaisquer expectativas que eu tenha criadas quando chego ao instituto. Amo!",
     meta: "1 review · 11 photos",
   },
   {
-    name: "Carolina Resende",
+    name: "Fatima",
     url: "https://www.google.com/maps/contrib/100896751874526003102/reviews?hl=en-GB",
     date: "2 years ago",
     text: "Without a doubt, an excellent professional. An excellent friend, a wonderful and welcoming environment, contagious joy. Thank you, sweetie, a thousand kisses 😘",
     meta: "Google review",
   },
   {
-    name: "Bruna Brito",
+    name: "Zaki",
     url: "https://www.google.com/maps/contrib/118361913304090879692/reviews?hl=en-GB",
     date: "2 years ago",
     text: "Kindness, professionalism, friendship, love, and so much quality! I love it 🥰 And the best nails ever 😍",

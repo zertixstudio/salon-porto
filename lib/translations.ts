@@ -19,7 +19,7 @@ export const translations = {
       scroll: "Scroll",
     },
     chapters: {
-      one: { index: "Chapter I", title: "Our Philosophy", body: "More than a beauty studio, Tânia Pinho - Instituto de Beleza is built on ten years of trust. Every appointment begins with a conversation, not a menu — and ends with you feeling like yourself, only more so." },
+      one: { index: "Chapter I", title: "Our Philosophy", body: "More than a beauty studio, Glamour Haven is built on years of trust. Every appointment begins with a conversation, not a menu — and ends with you feeling like yourself, only more so." },
       two: { index: "Chapter II", title: "The Craft", body: "Nail design since 2014, alongside hair, makeup, lashes and skincare — trained hands, medical-grade sterilisation, and a warm, welcoming space you'll want to return to." },
     },
     services: {
@@ -65,7 +65,7 @@ export const translations = {
       scroll: "Desplázate",
     },
     chapters: {
-      one: { index: "Capítulo I", title: "Nuestra Filosofía", body: "Más que un estudio de belleza, Tânia Pinho - Instituto de Beleza está construido sobre diez años de confianza. Cada cita comienza con una conversación, no con un menú — y termina haciéndote sentir más tú misma que nunca." },
+      one: { index: "Capítulo I", title: "Nuestra Filosofía", body: "Más que un estudio de belleza, este espacio está construido sobre años de confianza. Cada cita comienza con una conversación, no con un menú — y termina haciéndote sentir más tú misma que nunca." },
       two: { index: "Capítulo II", title: "El Oficio", body: "Diseño de uñas desde 2014, junto con cabello, maquillaje, pestañas y cuidado de la piel — manos formadas, esterilización de grado médico y un espacio cálido al que querrás volver." },
     },
     services: {
@@ -103,7 +103,7 @@ export const translations = {
     nav: { philosophy: "Filosofia", services: "Serviços", gallery: "Galeria", visit: "Visite-nos", book: "Reservar" },
     hero: {
       eyebrow: "Vale de Cambra, Portugal",
-      title1: "Beleza,",
+      title1: "beleza,",
       title2: "feita com",
       title3: "cuidado.",
       sub: "Um instituto de beleza onde cabelo, unhas e pele são tratados com a mesma atenção serena — cada detalhe pensado antes de ser aplicado.",
@@ -111,7 +111,7 @@ export const translations = {
       scroll: "Deslize",
     },
     chapters: {
-      one: { index: "Capítulo I", title: "A Nossa Filosofia", body: "Mais do que um studio de beleza, a Tânia Pinho - Instituto de Beleza é construída sobre dez anos de confiança. Cada marcação começa com uma conversa, não com um menu — e termina fazendo-a sentir-se mais ela mesma." },
+      one: { index: "Capítulo I", title: "A Nossa Filosofia", body: "Mais do que um estúdio de beleza, este espaço é construído sobre anos de confiança. Cada marcação começa com uma conversa, não com um menu — e termina fazendo-a sentir-se mais ela mesma." },
       two: { index: "Capítulo II", title: "O Ofício", body: "Nail designer desde 2014, a par de cabeleireiro, maquilhagem, pestanas e cuidados de pele — mãos experientes, esterilização de grau médico e um espaço acolhedor ao qual vai querer voltar." },
     },
     services: {
@@ -148,10 +148,10 @@ export const translations = {
 } as const;
 
 export const SITE = {
-  name: "Tânia Pinho - Instituto de Beleza",
-  address: "R. Rev. António Henriques Tavares 1009, 3730-205 Vale de Cambra",
-  phone: "+351 934 073 042",
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=T%C3%A2nia+Pinho+Instituto+de+Beleza+R.+Rev.+Ant%C3%B3nio+Henriques+Tavares+1009+3730-205+Vale+de+Cambra",
+  name: "Glamour Haven",
+  address: "1238-5698 Jersey Porto",
+  phone: "+351 869 585 6",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Jersey+Porto",
   // Replace with your real Fresha booking page URL
   freshaUrl: "https://www.fresha.com/",
 };
