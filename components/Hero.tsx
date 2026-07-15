@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useLanguage } from "@/lib/LanguageContext";
-import BookNowButton from "./BookNowButton";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -65,10 +64,10 @@ export default function Hero() {
       </div>
 
       {/* Asymmetrical layered content */}
-      <div className="hero-reveal relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-24 md:justify-center md:px-10 md:pb-0">
+      <div className="hero-reveal relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-center px-6 py-24 sm:py-28 md:px-10 md:py-32">
         <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-12">
           <div className="md:col-span-7 lg:col-span-6">
-            <h1 className="mt-4 font-display text-[13vw] font-800 leading-[0.95] text-cream md:text-[6.2vw]">
+            <h1 className="mt-4 font-display text-[11.5vw] font-800 leading-[0.95] text-cream -translate-y-2 md:text-[5.5vw]">
               <span className="block overflow-hidden">
                 <span className="hero-line block">{t.hero.title1}</span>
               </span>
@@ -76,15 +75,12 @@ export default function Hero() {
                 <span className="hero-line block">{t.hero.title2}</span>
               </span>
               <span className="block overflow-hidden">
-                <span className="hero-line block text-gold">{t.hero.title3}</span>
+                <span className="hero-line block text-cream">{t.hero.title3}</span>
               </span>
             </h1>
             <p className="hero-sub mt-6 max-w-md text-base leading-relaxed text-cream/70 md:text-lg">
               {t.hero.sub}
             </p>
-            <div className="hero-cta mt-8">
-              <BookNowButton variant="outline" />
-            </div>
           </div>
 
           {/* Overlapping floating photo, offset to break the grid */}
@@ -108,8 +104,10 @@ export default function Hero() {
       </div>
 
       <div className="hero-reveal absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 text-cream/50 md:flex">
-        <span className="eyebrow">{t.hero.scroll}</span>
-        <span className="h-10 w-px animate-pulse bg-cream/40" />
+        <span className="eyebrow tracking-[0.35em]">{t.hero.scroll}</span>
+        <span className="hero-scroll-track flex h-10 items-start justify-center overflow-hidden">
+          <span className="hero-scroll-line block h-full w-px rounded-full bg-black" />
+        </span>
       </div>
     </div>
   );

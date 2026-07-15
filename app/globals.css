@@ -47,6 +47,31 @@ html.lenis, html.lenis body {
   border-color: #DCD5C4;
 }
 
+.hero-scroll-track {
+  position: relative;
+}
+
+.hero-scroll-line {
+  animation: hero-scroll 1.8s ease-in-out infinite;
+  transform-origin: top center;
+  opacity: 1;
+  background-color: #f7f4ec;
+  width: 3px;
+  border-radius: 9999px;
+}
+
+@keyframes hero-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(18px);
+  }
+  100% {
+    transform: translateY(36px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;

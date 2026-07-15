@@ -8,7 +8,7 @@ export const locales: { code: Locale; label: string }[] = [
 
 export const translations = {
   en: {
-    nav: { philosophy: "Philosophy", services: "Services", gallery: "Gallery", visit: "Visit", book: "Book Now" },
+    nav: { philosophy: "Philosophy", services: "Services", gallery: "Gallery", visit: "Visit", book: "Make An Appointment" },
     hero: {
       eyebrow: "Vale de Cambra, Portugal",
       title1: "Beauty,",

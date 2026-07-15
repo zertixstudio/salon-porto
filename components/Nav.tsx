@@ -25,66 +25,63 @@ export default function Nav() {
     setMenuOpen(false);
   };
 
+  const active = solid || menuOpen;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-[100] transition-colors duration-500 ${
-        solid ? "bg-cream/90 backdrop-blur-md border-b border-line" : "bg-transparent"
+        active ? "bg-cream/90 backdrop-blur-md border-b border-line" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 md:px-10">
+        <button
+          onClick={() => setMenuOpen((value) => !value)}
+          className={`inline-flex h-10 w-10 items-center justify-center rounded-full border border-line transition-colors ${
+            active ? "text-ink" : "text-white"
+          }`}
+          aria-label="Toggle menu"
+        >
+          <span className="text-2xl">{menuOpen ? "×" : "☰"}</span>
+        </button>
+
         <button
           onClick={() => {
             (window as any).__lenis?.scrollTo(0);
             setMenuOpen(false);
           }}
-          className="font-display text-lg font-800 tracking-tight text-ink"
+          className={`font-display text-lg font-800 tracking-tight transition-colors ${active ? "text-ink" : "text-slate-100"}`}
         >
           {SITE.name}
         </button>
 
-        <nav className="hidden items-center gap-8 lg:flex">
-          <button onClick={() => scrollTo("philosophy")} className="eyebrow text-ink/70 hover:text-ink transition-colors">
-            {t.nav.philosophy}
-          </button>
-          <button onClick={() => scrollTo("services")} className="eyebrow text-ink/70 hover:text-ink transition-colors">
-            {t.nav.services}
-          </button>
-          <button onClick={() => scrollTo("gallery")} className="eyebrow text-ink/70 hover:text-ink transition-colors">
-            {t.nav.gallery}
-          </button>
-          <button onClick={() => scrollTo("visit")} className="eyebrow text-ink/70 hover:text-ink transition-colors">
-            {t.nav.visit}
-          </button>
-        </nav>
-
         <div className="flex items-center gap-3">
-          <LanguageSwitcher />
-          <BookNowButton className="hidden lg:inline-flex" />
-          <button
-            onClick={() => setMenuOpen((value) => !value)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink lg:hidden"
-            aria-label="Toggle mobile menu"
-          >
-            <span className="text-2xl">{menuOpen ? "×" : "☰"}</span>
-          </button>
+          <BookNowButton
+            className={`hidden lg:inline-flex border-0 bg-transparent shadow-none hover:bg-transparent active:bg-transparent ${
+              active ? "text-ink hover:text-gold active:text-gold" : "text-slate-100 hover:text-gold active:text-gold"
+            }`}
+          />
+          <div className="w-10" />
         </div>
       </div>
 
       {menuOpen ? (
-        <div className="border-t border-line bg-cream/95 px-6 py-4 md:hidden">
-          <div className="flex flex-col gap-3">
-            <button onClick={() => scrollTo("philosophy")} className="text-left eyebrow text-ink/80 hover:text-ink transition-colors">
+        <div className="px-6 py-4 md:px-10">
+          <div className="flex flex-col items-center gap-3 px-4 py-3">
+            <button onClick={() => scrollTo("philosophy")} className="w-full text-left text-sm uppercase tracking-[0.3em] text-ink transition-colors hover:text-ink">
               {t.nav.philosophy}
             </button>
-            <button onClick={() => scrollTo("services")} className="text-left eyebrow text-ink/80 hover:text-ink transition-colors">
+            <button onClick={() => scrollTo("services")} className="w-full text-left text-sm uppercase tracking-[0.3em] text-ink transition-colors hover:text-ink">
               {t.nav.services}
             </button>
-            <button onClick={() => scrollTo("gallery")} className="text-left eyebrow text-ink/80 hover:text-ink transition-colors">
+            <button onClick={() => scrollTo("gallery")} className="w-full text-left text-sm uppercase tracking-[0.3em] text-ink transition-colors hover:text-ink">
               {t.nav.gallery}
             </button>
-            <button onClick={() => scrollTo("visit")} className="text-left eyebrow text-ink/80 hover:text-ink transition-colors">
+            <button onClick={() => scrollTo("visit")} className="w-full text-left text-sm uppercase tracking-[0.3em] text-ink transition-colors hover:text-ink">
               {t.nav.visit}
             </button>
+            <div className="w-full pt-3">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       ) : null}
